@@ -1,0 +1,459 @@
+@font-face
+{
+        font-family:"AlphabitsSquared";
+       src:url(font/AlphabitsSquared.ttf);
+
+        font-family:"SentyGoldenBell";
+       src:url(font/SentyGoldenBell .ttf);
+
+        font-family:"HanyiSentyTang";
+       src:url(font/HanyiSentyTang.ttf);
+}
+/*********************************/
+.back-to-top /*23123231*/
+    {
+       display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
+       position: fixed; /* 位置是固定的 */
+       bottom: 20px; /* 顯示在頁面底部 */
+       right: 30px; /* 顯示在頁面的右邊 */
+       z-index: 99; /* 確保不被其他功能覆蓋 */
+       border: 1px solid #5cb85c; /* 顯示邊框 */
+       outline: none; /* 不顯示外框 */
+       background-color: #18433F; /* 設置背景背景顏色 */
+       color: #5cb85c; /* 設置文本顏色 */
+       cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+       padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+       border-radius: 10px; /* 增加圓角 */
+    }
+
+    .back-to-top:hover 
+    {
+       background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
+       color: #fff;
+    }
+/*********************************/
+a
+{
+  text-decoration:none;
+  color:#586E58;
+}
+
+.pic
+{
+   display: none; 
+   width:100%;
+   height: 685px;
+   margin: auto;
+   position: relative;
+   top: -220px;
+}
+.imgtext
+{
+  text-align: center;
+  position: relative;
+  top: -280px;
+  letter-spacing:5px;
+  color:white;
+  font-size: 27px;
+  z-index:1;
+}
+input:checked + img 
+{
+  display: block;
+}
+input 
+{
+  position: absolute;
+  left: -9999px;
+}
+.metoo
+{
+  z-index:1;
+  width: 300px;
+  height: 480px;
+  right: -1045px;
+  top:-682px;
+  border: solid;border-radius:100px;
+  border-width: 7px;
+  color:#7A5233;
+  position:absolute;
+  top: -750px;
+  right:5px;
+}
+.rel
+{
+  position:relative;
+}
+body 
+{
+  background-color: #CCA272;/* 背景顏色*/
+}
+/*********************************/
+header
+{  
+  position:relative;
+  top:0px;
+}
+header p /* 標題字型*/
+{
+  text-align:left;
+  font-weight:900;
+  letter-spacing:7px;
+  font-family:"AlphabitsSquared";
+  font-size: 80px;
+  position:relative;
+  right: -140px;
+  top:125px;
+  color:#7A5233;
+  z-index:1;
+}
+
+/*********************************/
+nav /*選單欄位*/
+{
+  position:absolute;
+  top:800px;
+  height: 35px;
+  width: 1370px;
+
+}
+nav table /* 選單欄位位置*/
+{
+  position:absolute;
+  right:40px;
+  top: -25px;
+  font-size: 35px;
+  line-height: 50px;
+  letter-spacing: 7px;
+  font-weight: bold;
+  margin-left:auto; 
+  margin-right:auto;
+  width: 1300px;
+  color: #6C3D0E;
+  font-family:"HanyiSentyTang";
+  margin-left:auto; 
+  margin-right:auto;
+}
+.hornav
+{
+transition: all 0.5s;
+position:relative; 
+}
+.hornav span{
+z-index: 2; 
+display: block;
+position:absolute; 
+width: 100%;
+height: 100%; 
+}
+.hornav:before{
+content: '';
+position: absolute;
+}
+.one
+{
+   line-height:31px;
+}
+.run h1
+{
+  width: 30em;
+  overflow: hidden;
+  animation: typing 12s;
+  z-index:1;
+  float:right;
+  background-color:#E2D4BA;
+  position:absolute;
+  top:-120px;
+  right:5px;
+  width: 1400px;
+  font-size: 20px;
+  font-weight:400;
+  line-height:50px;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 3px;
+  font-family:"SentyGoldenBell";
+  z-index: 1;
+  color: red;
+}
+/*********************************/
+/*右邊欄位*/
+aside{
+  z-index:1;
+  float: right;
+  background-color:#E2D4BA;
+  position:absolute;
+  top: 30px;
+  right: 60px;
+  padding: 4px;
+}
+aside p /* 右邊欄位字體*/
+{
+  font-size:20px;
+  font-weight: bold;
+　font-weight:500;
+  position:relative;
+  top: -20px;
+  padding:5px;
+  font-family:"SentyGoldenBell";
+  color:#586E58;
+}
+aside table /* 右邊欄位連結位置*/
+{
+   align-items: center;
+   width: 330px;
+   height: 150px;
+   float: center;
+   position:relative;
+   right: -50px;
+}
+.asideimg /*右邊欄位icon*/
+{ 
+  position:relative;
+  right: -20px;
+}
+
+.aside_two
+{
+  z-index:1;
+  float:right;
+  background-color:#E2D4BA;
+  position:absolute;
+  top:700px;
+  right:60px;
+  width: 330px;
+  font-size: 20px;
+  font-weight:400;
+  line-height:50px;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 3px;
+  font-family:"SentyGoldenBell";
+}
+.aside_two img
+{
+  position:absolute;
+  top:30px;
+  right:220px;
+}
+
+@keyframes typing 
+{
+  from { width: 0 }
+}
+
+
+/*********************************/
+article h1
+{  
+    position:relative;
+    right: -5px;
+    top: 30px;
+    color:#7A5233;
+    font-size:50px;
+    letter-spacing:5px;
+    font-family:"HanyiSentyTang";
+    text-transform: uppercase;
+    overflow: hidden;
+    background-repeat:no-repeat;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:#7A5233;
+    background: linear-gradient(5deg, #927158,#AA907D, #CEC0B4);
+    background-size:80%;
+    background-position:all;
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+article
+{
+  background-image:url('image/123.jpg');
+  z-index:0;
+  background-size:cover;
+  background-attachment:fixed;
+  position:relative;
+  top:-80px;
+}
+article p
+{
+  position: relative;
+  right: -100px;
+  top:20px;
+  font-size:30px;
+  font-family:"SentyGoldenBell";
+  letter-spacing:4px;
+  font-weight: 450;
+  line-height: 10px;
+}
+article table
+{
+  width: 100px;
+}
+article h2
+{
+  font-size:50px;
+  line-height:130px;
+  position: relative;
+  right: -100px;
+  font-weight: bold;
+  color: #2F3A59;
+  font-family:"SentyGoldenBell";
+}
+article h3
+{
+  font-size: 35px;
+  color: #2F3A59;
+  font-family:"SentyGoldenBell";
+  font-weight: bold;
+  position: relative;
+  right: -100px;
+  top:0px;
+  line-height:0px;
+}
+h3 img
+{
+  position: relative;
+  top:14px;
+  width: 50px;
+  height: 50px;
+}
+td title
+{
+  font-size: 30px;
+}
+.bbb p
+{
+  line-height: 60px;
+  position: relative;
+  top: -20px;
+  font-weight: bold;
+
+}
+.bbb h2
+{
+  position: relative;
+  top: 0px;
+  line-height:50px;
+  font-weight: bold;
+}
+ul
+{
+   font-size: 30px;
+   line-height: 50px;
+   font-family:"SentyGoldenBell";
+   position: relative;
+   right: -90px;
+}
+.myhope
+{
+  line-height:80px;
+}
+.minimg
+{
+  width:900px;
+}
+.minimg img
+{
+  width: 80px;
+  height: 80px;
+}
+.life 
+{
+  margin-left:auto;   
+  margin-right:auto; 
+  width: 1000px;
+  height: 600px;
+
+}
+.life img
+{
+  width: 360px;
+  height: 240px;
+  padding: 30px;
+  border: 5px;
+}
+.life_one
+{
+  margin-left:auto;   
+  margin-right:auto; 
+  width: 700px;
+  height: 600px;
+}
+.life_one img
+{
+  width: 360px;
+  height: 480px;
+  padding: 30px;
+  position:relative;
+  right: -30px;
+}
+.life_one img:hover
+{
+  transform:scale(1.2,1.5);
+}
+.box {
+  width: 360px;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+  padding: 25px;
+}
+.box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.6s;
+}
+.box:hover img {
+ transform:scale(1.5,1.5);
+}
+.box:hover .box-hover-text {
+  display: block;
+}
+.box .box-hover-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top:50%;
+  display: none;
+  background-color:transparent;
+  font-size: 40px;
+  font-family:"SentyGoldenBell";
+  text-align: center;
+  margin-top: auto;
+  color: #644260;
+}
+/*********************************/
+footer
+    { 
+     position:absolute;
+     right:25%;
+     color:black;
+	   font-style:italic;
+	   font-weight:normal;
+	   letter-spacing:2px;
+
+
+     font-family:"微軟正黑體";
+     height:30px;
+     font-style: italic;
+     font-family:"genkai-mincho";
+    }
+footer img
+{
+  width: 250px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  position: absolute;
+  top: -80px;
+  right: 190px;
+}
